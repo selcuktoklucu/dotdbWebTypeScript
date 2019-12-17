@@ -24,6 +24,7 @@ const SignUp: React.FC<Props> = props => {
   //   this.setState({
   //     [event.target.name]: event.target.value
   //   })
+  // Selcuk Burayi kontrol et, baris deneme
 
   const onSignUp = (event: { preventDefault: () => void }) => {
     event.preventDefault()
