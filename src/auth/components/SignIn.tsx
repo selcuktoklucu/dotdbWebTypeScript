@@ -1,12 +1,7 @@
 import React, { useState } from 'react'
-// import { withRouter } from 'react-router-dom'
-import { Redirect } from 'react-router-dom'
-import { withRouter } from 'react-router-dom'
 import { History } from 'history'
 
-import { signUp, signIn } from '../api'
-// import messages from '../messages'
-// import { Alert } from '../../App'
+import { signIn } from '../api'
 import { Credentials } from '../../shared/types'
 import Button from 'react-bootstrap/Button'
 
@@ -20,7 +15,7 @@ type Props = {
 const SignIn: React.FC<Props> = props => {
   const [email, setEmail] = useState()
   const [password, setPassword] = useState()
-  const [passwordConfirmation, setPasswordConfirmation] = useState()
+  // const [passwordConfirmation, setPasswordConfirmation] = useState()
 
   const onSignIn = (event: { preventDefault: () => void }) => {
     event.preventDefault()

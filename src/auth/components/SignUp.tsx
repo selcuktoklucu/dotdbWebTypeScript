@@ -2,11 +2,8 @@ import React, { useState } from 'react'
 // import { withRouter } from 'react-router-dom'
 
 import { signUp } from '../api'
-// import messages from '../messages'
-// import { Alert } from '../../App'
 import { Credentials } from '../../shared/types'
 import Button from 'react-bootstrap/Button'
-import Alert from 'react-bootstrap/Alert'
 
 type Props = {
   setAlerts: any
@@ -41,7 +38,7 @@ const SignUp: React.FC<Props> = props => {
       .then(() => console.log('pro'))
       .catch((error: any) => {
         console.error('ERR', error)
-        let variant = undefined
+        //let variant = undefined
 
         props.setAlerts([
           ...props.alerts,

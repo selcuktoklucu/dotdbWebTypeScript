@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { Route, Redirect, RouteComponentProps } from 'react-router-dom'
+import React from 'react'
+import { Route, Redirect } from 'react-router-dom'
 
 // props will include a `user` object or empty object
 // props will include a `component` as `Component` or a `render`
