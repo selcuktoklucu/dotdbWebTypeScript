@@ -4,8 +4,8 @@ export type Alert = {
 }
 
 export type User = {
-  firstName: string
-  lastName: string
+  email: string
+  token: string
 }
 // export type Credentials = {
 //   email: string

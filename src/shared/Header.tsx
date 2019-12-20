@@ -6,7 +6,7 @@ import logo from '../logo.svg'
 
 const authenticatedOptions = (
   <React.Fragment>
-    <Link to="/new-traffic-points">Add new Address</Link>
+    <Link to="/new-order">New Order</Link>
     <Link to="/change-password">Change Password</Link>
     <Link to="/sign-out">Sign Out</Link>
   </React.Fragment>
@@ -31,13 +31,13 @@ type Props = {
 
 const Header: React.FC<Props> = props => {
   const { user } = props
-  console.log(user)
+  //console.log(user)
   return (
     <header className="main-header">
       <img src={logo} className="App-logo" alt="logo" />
-      <h1>Uber, But For Taxis</h1>
+      <h1>The Dot DB</h1>
       <nav>
-        {user && <span>Welcome, {user.firstName}</span>}
+        {user && <span>Welcome, {user.email}</span>}
         {user ? authenticatedOptions : unauthenticatedOptions}
         {alwaysOptions}
       </nav>

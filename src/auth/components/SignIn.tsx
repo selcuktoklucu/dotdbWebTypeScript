@@ -1,28 +1,33 @@
 import React, { useState } from 'react'
-import { History } from 'history'
+// import { History } from 'history'
+import { useHistory } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
 
 import { signIn } from '../api'
 import { Credentials } from '../../shared/types'
 import Button from 'react-bootstrap/Button'
+import { updateSession } from '../../redux/system/actions'
 
 type Props = {
   setAlerts: any
   alerts: Array<any>
-  history: History
   setUser: any
 }
 
 const SignIn: React.FC<Props> = props => {
-  const [email, setEmail] = useState()
-  const [password, setPassword] = useState()
-  // const [passwordConfirmation, setPasswordConfirmation] = useState()
+  const [email, setEmail] = useState('st@st.com')
+  const [password, setPassword] = useState('stst')
+  //const [passwordConfirmation, setPasswordConfirmation] = useState()
+  let history = useHistory()
+  const dispatch = useDispatch()
 
   const onSignIn = (event: { preventDefault: () => void }) => {
     event.preventDefault()
     const credentials: Credentials = { email, password }
     signIn(credentials)
       .then((res: any) => {
-        props.setUser(res.data)
+        props.setUser(res.data.user)
+        // dispatch(updateSession(res.data.user.token))
       })
       .then(() =>
         props.setAlerts([
@@ -31,13 +36,13 @@ const SignIn: React.FC<Props> = props => {
         ])
       )
       .then(() => {
-        props.history.push('/')
+        history.push('/new-order')
       })
       .catch((error: any) => {
         console.error(error)
         props.setAlerts([
           ...props.alerts,
-          { title: 'Welcome', variant: 'success' }
+          { title: 'Welcome', variant: 'failed' }
         ])
       })
   }
