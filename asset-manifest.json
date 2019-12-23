@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/dotdbWebTypeScript/static/css/main.fe47ac33.chunk.css",
+    "main.js": "/dotdbWebTypeScript/static/js/main.fa68d4e5.chunk.js",
+    "main.js.map": "/dotdbWebTypeScript/static/js/main.fa68d4e5.chunk.js.map",
+    "runtime-main.js": "/dotdbWebTypeScript/static/js/runtime-main.ccdfde96.js",
+    "runtime-main.js.map": "/dotdbWebTypeScript/static/js/runtime-main.ccdfde96.js.map",
+    "static/css/2.17e5ed98.chunk.css": "/dotdbWebTypeScript/static/css/2.17e5ed98.chunk.css",
+    "static/js/2.9ba4e87a.chunk.js": "/dotdbWebTypeScript/static/js/2.9ba4e87a.chunk.js",
+    "static/js/2.9ba4e87a.chunk.js.map": "/dotdbWebTypeScript/static/js/2.9ba4e87a.chunk.js.map",
+    "index.html": "/dotdbWebTypeScript/index.html",
+    "precache-manifest.a5de0894a8f94d42c57736e18dc1884d.js": "/dotdbWebTypeScript/precache-manifest.a5de0894a8f94d42c57736e18dc1884d.js",
+    "service-worker.js": "/dotdbWebTypeScript/service-worker.js",
+    "static/css/2.17e5ed98.chunk.css.map": "/dotdbWebTypeScript/static/css/2.17e5ed98.chunk.css.map",
+    "static/css/main.fe47ac33.chunk.css.map": "/dotdbWebTypeScript/static/css/main.fe47ac33.chunk.css.map",
+    "static/js/2.9ba4e87a.chunk.js.LICENSE": "/dotdbWebTypeScript/static/js/2.9ba4e87a.chunk.js.LICENSE",
+    "static/media/logo.svg": "/dotdbWebTypeScript/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ccdfde96.js",
+    "static/css/2.17e5ed98.chunk.css",
+    "static/js/2.9ba4e87a.chunk.js",
+    "static/css/main.fe47ac33.chunk.css",
+    "static/js/main.fa68d4e5.chunk.js"
+  ]
+}
