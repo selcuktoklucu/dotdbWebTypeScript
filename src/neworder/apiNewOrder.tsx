@@ -19,7 +19,7 @@ export const createOrder = (credentials: Credentials) =>
     })
   })
 
-export const searchPhone = async (phone: number, user: User) => {
+export const searchPhone = async (phone: string, user: User) => {
   // const token = SecureStore.getItemAsync('secure_token')
   // console.log('searchByPhone network', user.token)
 
@@ -58,12 +58,12 @@ export const getSuggestions = async (address: string, user: User) => {
 }
 
 type Data = {
-  phoneNumber: number
+  phoneNumber: string
   address: string
   name: string
 }
 export const saveTheAddress = async (
-  phoneNumber: number,
+  phoneNumber: string,
   address: string,
   name: string,
   user: User

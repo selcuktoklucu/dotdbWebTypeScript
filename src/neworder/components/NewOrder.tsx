@@ -19,7 +19,7 @@ type Suggestion = {
 }
 
 const NewOrder: React.FC<Props> = props => {
-  const [phoneNumber, setPhoneNumber] = useState()
+  const [phoneNumber, setPhoneNumber] = useState('')
   const [address, setAddress] = useState()
 
   const [name, setName] = useState()
@@ -86,13 +86,19 @@ const NewOrder: React.FC<Props> = props => {
         <label htmlFor="number">Phone Number</label>
         <input
           required
+          type="text"
+          pattern="[0-9]"
           name="phoneNumber"
           value={phoneNumber}
-          type="tel"
-          placeholder="6172827141"
+          placeholder="6172 827141"
           maxLength={10}
-          pattern="[0-9]"
-          onChange={e => setPhoneNumber(e.target.value)}
+          onChange={e => {
+            const re = /^[0-9\b]+$/
+
+            if (e.target.value === '' || re.test(e.target.value)) {
+              setPhoneNumber(e.target.value)
+            }
+          }}
         />
         <label htmlFor="text">Address</label>
 
