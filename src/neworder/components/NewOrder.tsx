@@ -91,6 +91,7 @@ const NewOrder: React.FC<Props> = props => {
           type="tel"
           placeholder="6172827141"
           maxLength={10}
+          pattern="[0-9]"
           onChange={e => setPhoneNumber(e.target.value)}
         />
         <label htmlFor="text">Address</label>
