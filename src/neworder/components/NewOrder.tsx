@@ -7,6 +7,8 @@ import { Credentials, User } from '../../shared/types'
 import Button from 'react-bootstrap/Button'
 import { searchPhone, getSuggestions, saveTheAddress } from '../apiNewOrder'
 import { AlertProps } from 'react-bootstrap/Alert'
+import { default as NumberFormat } from 'react-number-format'
+import { ToastContainer, toast } from 'react-toastify'
 
 type Props = {
   user: User
@@ -41,15 +43,10 @@ const NewOrder: React.FC<Props> = props => {
       if (phoneNumber && phoneNumber.length === 10) {
         const response = await searchPhone(phoneNumber, props.user)
         if (response) {
+          toast.success('Address found!')
           setAddress(response.customer.currentAddress)
         } else {
-          props.setAlerts([
-            ...props.alerts,
-            {
-              title: 'Address not found! Please create one',
-              variant: 'success'
-            }
-          ])
+          toast.info('Address not found, please create one.')
         }
       }
     }
@@ -61,14 +58,7 @@ const NewOrder: React.FC<Props> = props => {
       if (address && address.length > 4) {
         const response = await getSuggestions(address, props.user)
         if (response === false) {
-          props.setAlerts([
-            ...props.alerts,
-            {
-              title:
-                'getSuggestions failed. Please change the input and try again',
-              variant: 'danger'
-            }
-          ])
+          toast.error('failed! please change the format.')
         }
         console.log('retrieved addresses', response.response)
         const responseArr = response.response
@@ -84,7 +74,7 @@ const NewOrder: React.FC<Props> = props => {
       <form className="auth-form" onSubmit={() => console.log('heyo')}>
         <h3>Add new order</h3>
         <label htmlFor="number">Phone Number</label>
-        <input
+        {/*<input
           required
           type="text"
           pattern="[0-9]"
@@ -99,7 +89,19 @@ const NewOrder: React.FC<Props> = props => {
               setPhoneNumber(e.target.value)
             }
           }}
+        />*/}
+        <NumberFormat
+          format="(###) ###-####"
+          mask="_"
+          onValueChange={e => {
+            const re = /^[0-9\b]+$/
+
+            if (e.value === '' || re.test(e.value)) {
+              setPhoneNumber(e.value)
+            }
+          }}
         />
+
         <label htmlFor="text">Address</label>
 
         <input

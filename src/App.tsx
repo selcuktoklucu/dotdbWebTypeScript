@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 // import logo from './logo.svg'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -11,7 +11,8 @@ import AuthenticatedRoute from './shared/AuthenticatedRoute'
 import AutoDismissAlert from './shared/autoDismissAlert'
 import { AlertProps } from 'react-bootstrap/Alert'
 import NewOrder from './neworder/components/NewOrder'
-const { useState } = React
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 const App: React.FC = () => {
   const [user, setUser] = useState()
@@ -20,6 +21,7 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <main className="container">
+        <ToastContainer />
         <Router>
           <Header user={user}></Header>
           {alerts.length > 0 &&

@@ -7,6 +7,7 @@ import { signIn } from '../api'
 import { Credentials } from '../../shared/types'
 import Button from 'react-bootstrap/Button'
 import { updateSession } from '../../redux/system/actions'
+import { ToastContainer, toast } from 'react-toastify'
 
 type Props = {
   setAlerts: any
@@ -29,21 +30,13 @@ const SignIn: React.FC<Props> = props => {
         props.setUser(res.data.user)
         // dispatch(updateSession(res.data.user.token))
       })
-      .then(() =>
-        props.setAlerts([
-          ...props.alerts,
-          { title: 'Welcome', variant: 'success' }
-        ])
-      )
+      .then(() => toast.success('Welcome!'))
       .then(() => {
         history.push('/new-order')
       })
       .catch((error: any) => {
         console.error(error)
-        props.setAlerts([
-          ...props.alerts,
-          { title: 'Welcome', variant: 'failed' }
-        ])
+        toast.error('Something went wrong, please check the console.')
       })
   }
 
