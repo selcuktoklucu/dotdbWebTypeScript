@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/dotdbWebTypeScript/static/css/main.fe47ac33.chunk.css",
-    "main.js": "/dotdbWebTypeScript/static/js/main.e04cbf93.chunk.js",
-    "main.js.map": "/dotdbWebTypeScript/static/js/main.e04cbf93.chunk.js.map",
+    "main.js": "/dotdbWebTypeScript/static/js/main.d16c0ce6.chunk.js",
+    "main.js.map": "/dotdbWebTypeScript/static/js/main.d16c0ce6.chunk.js.map",
     "runtime-main.js": "/dotdbWebTypeScript/static/js/runtime-main.ccdfde96.js",
     "runtime-main.js.map": "/dotdbWebTypeScript/static/js/runtime-main.ccdfde96.js.map",
     "static/css/2.6771fd38.chunk.css": "/dotdbWebTypeScript/static/css/2.6771fd38.chunk.css",
     "static/js/2.65751b79.chunk.js": "/dotdbWebTypeScript/static/js/2.65751b79.chunk.js",
     "static/js/2.65751b79.chunk.js.map": "/dotdbWebTypeScript/static/js/2.65751b79.chunk.js.map",
     "index.html": "/dotdbWebTypeScript/index.html",
-    "precache-manifest.c7338544fa70298d5327bf856d6dd882.js": "/dotdbWebTypeScript/precache-manifest.c7338544fa70298d5327bf856d6dd882.js",
+    "precache-manifest.dc7c0616d3b94ada2f5bb22a7a12e91e.js": "/dotdbWebTypeScript/precache-manifest.dc7c0616d3b94ada2f5bb22a7a12e91e.js",
     "service-worker.js": "/dotdbWebTypeScript/service-worker.js",
     "static/css/2.6771fd38.chunk.css.map": "/dotdbWebTypeScript/static/css/2.6771fd38.chunk.css.map",
     "static/css/main.fe47ac33.chunk.css.map": "/dotdbWebTypeScript/static/css/main.fe47ac33.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.6771fd38.chunk.css",
     "static/js/2.65751b79.chunk.js",
     "static/css/main.fe47ac33.chunk.css",
-    "static/js/main.e04cbf93.chunk.js"
+    "static/js/main.d16c0ce6.chunk.js"
   ]
 }

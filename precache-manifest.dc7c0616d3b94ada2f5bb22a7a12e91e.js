@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "95081fc31fc1295f34a80afb0d7bdcae",
+    "revision": "ab6740d9f7982bf82a11e2297b6baf07",
     "url": "/dotdbWebTypeScript/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dotdbWebTypeScript/static/css/2.6771fd38.chunk.css"
   },
   {
-    "revision": "e5646fd591ee3962e9f2",
+    "revision": "20a74a254ce81e9b39c1",
     "url": "/dotdbWebTypeScript/static/css/main.fe47ac33.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dotdbWebTypeScript/static/js/2.65751b79.chunk.js.LICENSE"
   },
   {
-    "revision": "e5646fd591ee3962e9f2",
-    "url": "/dotdbWebTypeScript/static/js/main.e04cbf93.chunk.js"
+    "revision": "20a74a254ce81e9b39c1",
+    "url": "/dotdbWebTypeScript/static/js/main.d16c0ce6.chunk.js"
   },
   {
     "revision": "aa757331ffe04d68ceab",
