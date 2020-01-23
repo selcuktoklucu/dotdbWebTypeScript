@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ab6740d9f7982bf82a11e2297b6baf07",
+    "revision": "3a1bacf2d22a2c020588a5fc995a0a20",
     "url": "/dotdbWebTypeScript/index.html"
   },
   {
-    "revision": "2a422c448a12c54c08d3",
+    "revision": "c2cfa99f61fed4f93f3a",
     "url": "/dotdbWebTypeScript/static/css/2.6771fd38.chunk.css"
   },
   {
-    "revision": "20a74a254ce81e9b39c1",
+    "revision": "efd47bf2799e46f70ea0",
     "url": "/dotdbWebTypeScript/static/css/main.fe47ac33.chunk.css"
   },
   {
-    "revision": "2a422c448a12c54c08d3",
-    "url": "/dotdbWebTypeScript/static/js/2.65751b79.chunk.js"
+    "revision": "c2cfa99f61fed4f93f3a",
+    "url": "/dotdbWebTypeScript/static/js/2.c4f884a1.chunk.js"
   },
   {
     "revision": "4aa0fe1eaee3dcf45338a38641d40f08",
-    "url": "/dotdbWebTypeScript/static/js/2.65751b79.chunk.js.LICENSE"
+    "url": "/dotdbWebTypeScript/static/js/2.c4f884a1.chunk.js.LICENSE"
   },
   {
-    "revision": "20a74a254ce81e9b39c1",
-    "url": "/dotdbWebTypeScript/static/js/main.d16c0ce6.chunk.js"
+    "revision": "efd47bf2799e46f70ea0",
+    "url": "/dotdbWebTypeScript/static/js/main.7aa4a948.chunk.js"
   },
   {
     "revision": "aa757331ffe04d68ceab",
